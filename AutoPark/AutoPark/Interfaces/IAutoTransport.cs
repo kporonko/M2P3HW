@@ -9,8 +9,9 @@ namespace AutoPark.Interfaces
     internal interface IAutoTransport : ITransport
     {
         public IEngine Engine { get; set; }
-        public bool IsTruck { get; set; }
-        public bool IsPassenger { get; set; }
+        public string Model { get; }
+        public bool IsTruck { get; }
+        public bool IsPassenger { get; }
         public void Drive();
     }
 }

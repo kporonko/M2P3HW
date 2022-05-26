@@ -9,12 +9,9 @@ namespace AutoPark.Models.CarFirms
 {
     internal class Zaporozhets : AutoTransport
     {
-        public Zaporozhets(string zaporozhetsModel, IEngine engine, bool istruck, bool ispass, string model, double weight, double height, int capacity, bool isWork, DateTime creationDate, string color, double price)
+        public Zaporozhets(IEngine engine, bool istruck, bool ispass, string model, double weight, double height, int capacity, bool isWork, DateTime creationDate, string color, double price)
             : base(engine, istruck, ispass, model, weight, height, capacity, isWork, creationDate, color, price)
         {
-            ZaporozhetsModel = zaporozhetsModel;
         }
-
-        public string ZaporozhetsModel { get; }
     }
 }

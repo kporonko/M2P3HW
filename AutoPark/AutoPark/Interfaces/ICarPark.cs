@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace AutoPark.Interfaces
 {
-    internal interface IEngine
+    internal interface ICarPark
     {
-        public double Power { get; set; }
+        public string Name { get; set; }
+        public IAutoTransport[] Autos { get; set; }
     }
 }

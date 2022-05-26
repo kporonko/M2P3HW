@@ -15,11 +15,13 @@ namespace AutoPark.Models
             Engine = engine;
             IsPassenger = ispass;
             IsTruck = istruck;
+            Model = model;
         }
 
         public IEngine Engine { get; set; }
-        public bool IsTruck { get; set; }
-        public bool IsPassenger { get; set; }
+        public string Model { get; }
+        public bool IsTruck { get; }
+        public bool IsPassenger { get; }
         public void Drive()
         {
             Console.WriteLine("Driving");
