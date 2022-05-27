@@ -6,7 +6,8 @@ namespace AutoPark
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Starter.Run();
+            Console.ReadLine();
         }
     }
 }

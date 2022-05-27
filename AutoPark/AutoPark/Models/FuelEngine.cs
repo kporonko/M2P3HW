@@ -7,13 +7,14 @@ using AutoPark.Interfaces;
 
 namespace AutoPark.Models
 {
-    internal class Engine : IEngine
+    internal class FuelEngine : Engine
     {
-        public Engine(double power)
+        public FuelEngine(double power, string fueltype)
+            : base(power)
         {
-            Power = power;
+            FuelType = fueltype;
         }
 
-        public double Power { get; set; }
+        public string FuelType { get; set; }
     }
 }

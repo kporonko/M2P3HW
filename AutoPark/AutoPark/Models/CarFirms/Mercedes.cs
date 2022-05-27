@@ -9,12 +9,9 @@ namespace AutoPark.Models.CarFirms
 {
     internal class Mercedes : AutoTransport
     {
-        public Mercedes(string mercedesModel, IEngine engine, bool istruck, bool ispass, string model, double weight, double height, int capacity, bool isWork, DateTime creationDate, string color, double price)
+        public Mercedes(IEngine engine, bool istruck, string model, bool ispass, double weight, double height, int capacity, bool isWork, DateTime creationDate, string color, double price)
             : base(engine, istruck, ispass, model, weight, height, capacity, isWork, creationDate, color, price)
         {
-            MercedesModel = mercedesModel;
         }
-
-        public string MercedesModel { get; }
     }
 }
